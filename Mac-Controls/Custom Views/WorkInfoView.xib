@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WorkInfoView" customModule="Mac_Controls" customModuleProvider="target">
+            <connections>
+                <outlet property="desktopRadio" destination="l8r-fH-83M" id="7SG-Sm-Jrb"/>
+                <outlet property="experienceLevelLabel" destination="my4-Eh-HeX" id="Iun-lG-UyI"/>
+                <outlet property="experienceLevelSlider" destination="gf4-K4-KTY" id="D00-yc-M8P"/>
+                <outlet property="experienceYearsLabel" destination="Uhd-2s-rHV" id="uiP-Em-sSB"/>
+                <outlet property="experienceYearsSlider" destination="jcx-vp-mnA" id="LwD-BW-LRy"/>
+                <outlet property="mobileRadio" destination="mwk-Gw-yQI" id="gKY-h1-Snq"/>
+                <outlet property="platformPrefBox" destination="9CR-el-9yU" id="WI4-4w-amX"/>
+                <outlet property="professionCombo" destination="k5S-zS-pzK" id="u4q-vo-u8A"/>
+                <outlet property="professionLabel" destination="H5c-H7-uhO" id="7Tb-l8-3V1"/>
+                <outlet property="relocateCheckbox" destination="vzQ-FO-O6U" id="g7k-oR-ufQ"/>
+                <outlet property="satisfactionLabel" destination="ilJ-Vd-NRj" id="ZtR-z8-d4A"/>
+                <outlet property="satisfactionLevelIndicator" destination="rM8-RP-BwY" id="r3d-dr-boc"/>
+                <outlet property="statusLabel" destination="PAf-m1-p4V" id="Pri-Di-aua"/>
+                <outlet property="statusSegmented" destination="Vk6-ZU-uXo" id="LOB-YF-m1n"/>
+                <outlet property="webRadio" destination="jY1-Yi-pIu" id="Ylc-3K-ykQ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5c-H7-uhO">
+                    <rect key="frame" x="18" y="313" width="74" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Profession" id="bXH-5g-iTT">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="my4-Eh-HeX">
+                    <rect key="frame" x="248" y="242" width="184" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Experience Level: Mid" id="1VZ-FX-gqm">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAf-m1-p4V">
+                    <rect key="frame" x="18" y="104" width="174" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Current Employment Status" id="LGh-r0-ThS">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ilJ-Vd-NRj">
+                    <rect key="frame" x="18" y="40" width="174" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Satisfaction Level: 5/10" id="4BS-UF-7cN">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-2s-rHV">
+                    <rect key="frame" x="248" y="163" width="184" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Years of experience: 5" id="Emh-0x-WU0">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5S-zS-pzK">
+                    <rect key="frame" x="20" y="285" width="200" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="wCo-4z-PMx">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <objectValues>
+                            <string>Developer</string>
+                            <string>Designer</string>
+                        </objectValues>
+                    </comboBoxCell>
+                </comboBox>
+                <box fixedFrame="YES" title="Platform Preference" translatesAutoresizingMaskIntoConstraints="NO" id="9CR-el-9yU">
+                    <rect key="frame" x="20" y="140" width="170" height="125"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="FJY-ZN-Ph7">
+                        <rect key="frame" x="3" y="3" width="164" height="107"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mwk-Gw-yQI">
+                                <rect key="frame" x="20" y="76" width="70" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" title="Mobile" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="UHO-pt-5eT">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="handlePlatformPreference:" target="-2" id="G6d-fR-Lpa"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8r-fH-83M">
+                                <rect key="frame" x="20" y="48" width="70" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" title="Desktop" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="1Zo-tO-pa6">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="handlePlatformPreference:" target="-2" id="9kn-eO-B3Z"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jY1-Yi-pIu">
+                                <rect key="frame" x="20" y="20" width="70" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" title="Web" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="c4z-Dq-l17">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="handlePlatformPreference:" target="-2" id="TLs-xp-cSs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </box>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzQ-FO-O6U">
+                    <rect key="frame" x="302" y="20" width="130" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Willing to relocate" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="OuS-WL-fcf">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="handleRelocateChange:" target="-2" id="XUv-1P-Uce"/>
+                    </connections>
+                </button>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gf4-K4-KTY">
+                    <rect key="frame" x="250" y="212" width="180" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="3" doubleValue="2" tickMarkPosition="above" numberOfTickMarks="3" allowsTickMarkValuesOnly="YES" sliderType="linear" id="9JP-wx-uis"/>
+                    <connections>
+                        <action selector="handleExperienceLevelChange:" target="-2" id="298-fZ-7eH"/>
+                    </connections>
+                </slider>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcx-vp-mnA">
+                    <rect key="frame" x="250" y="140" width="180" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="40" doubleValue="5" tickMarkPosition="above" sliderType="linear" id="sB2-wM-woS"/>
+                    <connections>
+                        <action selector="handleExperienceYearsChange:" target="-2" id="AbM-fg-uqi"/>
+                    </connections>
+                </slider>
+                <levelIndicator verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rM8-RP-BwY">
+                    <rect key="frame" x="20" y="20" width="150" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <levelIndicatorCell key="cell" editable="YES" continuous="YES" alignment="left" doubleValue="5" maxValue="10" levelIndicatorStyle="rating" id="gMM-UX-Nrg"/>
+                    <color key="fillColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="handleSatisfactionLevelChange:" target="-2" id="VWR-Pk-M8G"/>
+                    </connections>
+                </levelIndicator>
+                <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vk6-ZU-uXo">
+                    <rect key="frame" x="17" y="74" width="416" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="7vy-cj-9yd">
+                        <font key="font" metaFont="system"/>
+                        <segments>
+                            <segment label="Unemployed" width="136"/>
+                            <segment label="Employed" width="136" selected="YES" tag="1"/>
+                            <segment label="Freelancer" width="136"/>
+                        </segments>
+                    </segmentedCell>
+                    <connections>
+                        <action selector="handleEmploymentStatusChange:" target="-2" id="JNX-4U-48c"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+        </customView>
+    </objects>
+</document>
